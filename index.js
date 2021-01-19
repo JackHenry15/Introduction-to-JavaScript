@@ -53,6 +53,8 @@ Do the following:
    HINT: look up the Number method
 */
 const x = '1999';
+Number(x);
+console.log(x);
 
 
 
@@ -67,8 +69,8 @@ Do the following:
 */
 
 function multiply(a, b){
-    return a * b;
-  }
+  return a * b;
+}
 
 
 
@@ -82,8 +84,9 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
+function dogYears(a, b){
     /*add your code here*/
+    return a * 7;
 }
 
 
@@ -114,10 +117,32 @@ Use the hungryDog function and feeding requirements below to do the following:
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
+function hungryDog(weight, age){
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+  if (age=>1){
+      if(weight<=5){
+        return(weight * .05);
+      }else if(weight>5 && weight<=10){
+        return(weight * .04);
+      }else if(weight>10 && weight<=15){
+        return(weight * .03);
+      }else{
+        return(weight * .02);
+      }
   }
+  else{
+      if(age>(2/12) && age<=(4/12)){
+        return(weight * .1);
+      }else if(age>(4/12) && age<(7/12)){
+        return(weight * .05);
+      }else if(age>(7/12) && age<(12/12)){
+        return(weight * .04);
+      }
+  }
+
+}
+   
+  
 
 
 
@@ -144,6 +169,31 @@ Use the game function below to do the following:
 
 function game(user, computer){
     /*add your code here*/
+    if (user === 'rock'){
+      if(computer === 'rock'){
+        return("it's a tie");
+      }else if(computer === 'paper'){
+        return("you lose!");
+      }else if(computer === 'scissors'){
+        return("you win!");
+      }
+    }else if(user === 'scissors'){
+      if(computer === 'rock'){
+        return("you lose!");
+      }else if(computer === 'paper'){
+        return("you win!");
+      }else if(computer === 'scissors'){
+        return("it's a tie");
+      }
+    }else if(user === 'paper'){
+      if(computer === 'rock'){
+        return("you win!");
+      }else if(computer === 'paper'){
+        return("it's a tie");
+      }else if(computer === 'scissors'){
+        return("you lose!");
+      }
+    }
 }
   
   
