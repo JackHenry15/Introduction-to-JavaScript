@@ -17,7 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 19;
+if(votingAge => 18){
+  console.log('true');
+}
 
 
 /*
@@ -30,8 +33,12 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let a = 20;
+let b = 15;
+if (a>b){
+  a = 10;
+  console.log(a);
+}
 
 
 
@@ -45,6 +52,7 @@ Do the following:
 
    HINT: look up the Number method
 */
+const x = '1999';
 
 
 
